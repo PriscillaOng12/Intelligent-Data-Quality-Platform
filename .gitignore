@@ -1,0 +1,33 @@
+# General
+.DS_Store
+*.pyc
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+node_modules/
+coverage.xml
+.coverage
+.env
+.venv/
+env/
+frontend/dist/
+frontend/.vite
+frontend/.eslintcache
+backend/.ipynb_checkpoints/
+data/delta/
+*.log
+*.sqlite
+.idea/
+.vscode/
+.env.local
+
+# Generated reports 
+backend/reports/
+
+# Docker 
+Dockerfile.tmp
+*.dockerfile

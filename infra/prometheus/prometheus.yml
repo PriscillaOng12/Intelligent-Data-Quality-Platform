@@ -1,0 +1,11 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: 'backend'
+    static_configs:
+      - targets: ['backend:8000']
+  - job_name: 'spark_job'
+    static_configs:
+      - targets: ['backend:8000']  # job metrics exported via backend metrics endpoint
