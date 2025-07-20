@@ -1,0 +1,92 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:15-alpine
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: iqp
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd="pg_isready -U postgres" --health-interval=10s --health-timeout=5s --health-retries=5
+
+    steps:
+      - uses: actions/checkout@v3
+
+      # Backend setup
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install backend dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r backend/requirements.txt
+
+      - name: Run backend checks and tests
+        run: |
+          cd backend
+          ruff check .
+          black --check .
+          pytest -q --cov=app --cov-report=xml
+        env:
+          DATABASE_URL: postgresql+psycopg2://postgres:postgres@localhost:5432/iqp
+          SECRET_KEY: test-secret
+          MOCK_MODE: "true"
+
+      # Frontend setup
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.x'
+
+      - name: Install frontend dependencies
+        run: |
+          cd frontend
+          npm ci
+
+      - name: Run frontend lint and build
+        run: |
+          cd frontend
+          npm run lint --if-present
+          npm run typecheck --if-present
+          npm run build --if-present
+
+      # Upload coverage report to GitHub Actions as an artifact
+      - uses: actions/upload-artifact@v3
+        with:
+          name: backend-coverage-report
+          path: backend/coverage.xml
+
+  build-images:
+    runs-on: ubuntu-latest
+    needs: build-and-test
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build backend image
+        run: |
+          docker build -t iqp-backend:latest -f backend/Dockerfile backend
+      - name: Build frontend image
+        run: |
+          docker build -t iqp-frontend:latest -f frontend/Dockerfile frontend
+      - name: Scan images with Trivy
+        uses: aquasecurity/trivy-action@v0.11.2
+        with:
+          image-ref: iqp-backend:latest
+          format: sarif
+          output: trivy-backend.sarif
+      - name: Upload Trivy SARIF
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: trivy-backend.sarif
