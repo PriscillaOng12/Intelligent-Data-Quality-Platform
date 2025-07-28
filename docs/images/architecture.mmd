@@ -1,0 +1,33 @@
+%% Mermaid diagram for the overall architecture
+flowchart TD
+    subgraph Browser
+      U(User)
+    end
+    subgraph Frontend
+      FE[React App]
+    end
+    subgraph Backend
+      API[FastAPI Backend]
+      DB[(Postgres)]
+    end
+    subgraph Data
+      Delta[(Delta Lake)]
+      SparkJob[Spark Quality Job]
+    end
+    subgraph Messaging
+      Kafka[(Kafka/Redpanda)]
+    end
+    subgraph Observability
+      Prom[Prometheus]
+      Graf[Grafana]
+    end
+    U -->|HTTP| FE
+    FE -->|REST/JSON| API
+    API --> DB
+    API -->|Stream Events| Kafka
+    SparkJob --> Delta
+    SparkJob -->|Incidents| DB
+    Kafka --> SparkJob
+    API --> Prom
+    SparkJob --> Prom
+    Prom --> Graf
