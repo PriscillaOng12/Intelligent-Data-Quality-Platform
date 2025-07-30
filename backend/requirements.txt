@@ -1,0 +1,83 @@
+# Core Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Database
+sqlalchemy==2.0.23
+psycopg2-binary==2.9.9
+alembic==1.13.1
+
+# Authentication & Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.6
+
+# Caching & Message Queue
+redis==5.0.1
+celery==5.3.4
+
+# Big Data Processing
+pyspark==3.5.0
+delta-spark==3.0.0
+py4j==0.10.9.7
+
+# Streaming
+kafka-python==2.0.2
+confluent-kafka==2.3.0
+
+# Machine Learning
+scikit-learn==1.3.2
+numpy==1.24.3
+pandas==2.1.4
+scipy==1.11.4
+mlflow==2.8.1
+joblib==1.3.2
+
+# Data Validation & Quality
+great-expectations==0.18.8
+pandera==0.17.2
+cerberus==1.3.5
+
+# Monitoring & Observability
+prometheus-client==0.19.0
+opentelemetry-api==1.21.0
+opentelemetry-sdk==1.21.0
+opentelemetry-instrumentation-fastapi==0.42b0
+
+# Utilities
+python-dotenv==1.0.0
+click==8.1.7
+typer==0.9.0
+httpx==0.25.2
+aiofiles==23.2.1
+jinja2==3.1.2
+
+# Data Visualization (for backend analytics)
+matplotlib==3.8.2
+seaborn==0.13.0
+plotly==5.17.0
+
+# Cloud Storage
+boto3==1.34.0
+azure-storage-blob==12.19.0
+google-cloud-storage==2.10.0
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+httpx==0.25.2
+factory-boy==3.3.0
+
+# Development
+black==23.11.0
+isort==5.12.0
+flake8==6.1.0
+mypy==1.7.1
+pre-commit==3.6.0
+
+# Documentation
+mkdocs==1.5.3
+mkdocs-material==9.4.8
