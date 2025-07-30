@@ -1,0 +1,447 @@
+# Intelligent Data Quality Platform - .gitignore
+
+# ================================
+# Python
+# ================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# ================================
+# Node.js / React
+# ================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage
+.grunt
+
+# Bower dependency directory
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons
+build/Release
+
+# Dependency directories
+jspm_packages/
+
+# Snowpack dependency directory
+web_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variable files
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# parcel-bundler cache
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+out/
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+public
+
+# Vuepress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# ================================
+# Docker
+# ================================
+*.dockerignore
+docker-compose.override.yml
+
+# ================================
+# Kubernetes
+# ================================
+*.kubeconfig
+kubeconfig
+
+# ================================
+# Terraform
+# ================================
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+.terraform/
+.terraform.lock.hcl
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# ================================
+# Apache Spark
+# ================================
+spark-warehouse/
+metastore_db/
+derby.log
+*.jar
+spark-*-bin-*/
+*.log
+
+# ================================
+# Delta Lake
+# ================================
+_delta_log/
+*.parquet
+*.delta
+
+# ================================
+# MLflow
+# ================================
+mlruns/
+mlartifacts/
+
+# ================================
+# Databases
+# ================================
+*.db
+*.sqlite
+*.sqlite3
+
+# ================================
+# IDEs and Editors
+# ================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+Sessionx.vim
+.netrwhist
+
+# ================================
+# OS Generated Files
+# ================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+$RECYCLE.BIN/
+Desktop.ini
+
+# Linux
+.directory
+.Trash-*
+
+# ================================
+# Logs and temporary files
+# ================================
+*.log
+*.tmp
+*.temp
+logs/
+tmp/
+temp/
+
+# ================================
+# Security and Secrets
+# ================================
+.env.production
+.env.staging
+secrets/
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+config/secrets.yml
+config/database.yml
+
+# ================================
+# Data files (large datasets)
+# ================================
+data/raw/
+data/processed/
+data/external/
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.json
+*.jsonl
+*.avro
+*.orc
+
+# ================================
+# Monitoring and Observability
+# ================================
+prometheus_data/
+grafana_data/
+jaeger_data/
+
+# ================================
+# Backup files
+# ================================
+*.backup
+*.bak
+*.old
+*.orig
+
+# ================================
+# Build artifacts
+# ================================
+target/
+out/
+build/
+
+# ================================
+# Jupyter specific
+# ================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# ================================
+# Package manager lock files (keep some, ignore others)
+# ================================
+# Keep: package-lock.json, yarn.lock, poetry.lock for reproducible builds
+# Ignore: Pipfile.lock (if using poetry)
+
+# ================================
+# Local development overrides
+# ================================
+docker-compose.local.yml
+.env.local
+config.local.json
+local_settings.py
