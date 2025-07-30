@@ -1,7 +1,35 @@
-
 # Intelligent Data Quality Monitoring Platform
+#### Frontend
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-4.9-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Material-UI](https://img.shields.io/badge/Material--UI-5.18-007FFF?style=for-the-badge&logo=mui)](https://mui.com/)
+[![Webpack](https://img.shields.io/badge/Webpack-5-8DD6F9?style=for-the-badge&logo=webpack)](https://webpack.js.org/)
 
-![Platform Overview](docs/images/platform-overview.gif)
+#### Backend
+[![FastAPI](https://img.shields.io/badge/FastAPI-Latest-009688?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
+[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python)](https://python.org/)
+[![Apache Spark](https://img.shields.io/badge/Apache_Spark-3.5-E25A1C?style=for-the-badge&logo=apache-spark)](https://spark.apache.org/)
+[![Kafka](https://img.shields.io/badge/Apache_Kafka-Latest-231F20?style=for-the-badge&logo=apache-kafka)](https://kafka.apache.org/)
+
+#### Database & Storage
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-336791?style=for-the-badge&logo=postgresql)](https://postgresql.org/)
+[![Redis](https://img.shields.io/badge/Redis-7-DC382D?style=for-the-badge&logo=redis)](https://redis.io/)
+[![Delta Lake](https://img.shields.io/badge/Delta_Lake-3.0-00ADD8?style=for-the-badge&logo=delta)](https://delta.io/)
+
+#### ML & Analytics
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3-F7931E?style=for-the-badge&logo=scikit-learn)](https://scikit-learn.org/)
+[![MLflow](https://img.shields.io/badge/MLflow-2.8-0194E2?style=for-the-badge&logo=mlflow)](https://mlflow.org/)
+[![Great Expectations](https://img.shields.io/badge/Great_Expectations-0.18-FF6B6B?style=for-the-badge)](https://greatexpectations.io/)
+
+#### DevOps & Monitoring
+[![Docker](https://img.shields.io/badge/Docker-Latest-2496ED?style=for-the-badge&logo=docker)](https://docker.com/)
+[![Kubernetes](https://img.shields.io/badge/Kubernetes-1.28-326CE5?style=for-the-badge&logo=kubernetes)](https://kubernetes.io/)
+[![Prometheus](https://img.shields.io/badge/Prometheus-Latest-E6522C?style=for-the-badge&logo=prometheus)](https://prometheus.io/)
+[![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-1.0-000000?style=for-the-badge&logo=opentelemetry)](https://opentelemetry.io/) 
+
+
+https://github.com/user-attachments/assets/c1b7df73-a99b-4fcd-b4b4-99fea3ef5db3
+
 
 ## Why I Built This (Opening Hook)
 
