@@ -5,6 +5,7 @@
 
 set -e
 
+
 echo "🚀 Setting up Intelligent Data Quality Platform..."
 
 # Colors for output
