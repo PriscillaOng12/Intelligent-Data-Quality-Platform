@@ -46,12 +46,12 @@ Current data quality tools are reactive, manual, and built for yesterday's data 
 
 Instead of building another rule-based monitoring tool, I focused on **intelligence and automation**:
 
-- ** ML-Powered Detection**: Uses Isolation Forests and statistical process control to catch anomalies that rules miss - achieving 97.3% accuracy with only 0.7% false positives (tested on 2M+ records)
-- ** Real-Time Processing**: Built on Spark Streaming to process 15TB+ datasets in under 45 minutes - my biggest dataset so far took 42 minutes for 18TB of transaction data
-- ** Smart Alerting**: Context-aware notifications that actually help me fix issues instead of just telling me something's broken
-- ** Interactive Lineage**: Click through your data dependencies to understand impact and trace root causes visually
-- ** Cost Optimization**: Intelligent sampling and resource management that reduced my AWS bill by 40% during testing
-- ** Modern Stack Integration**: Built specifically for the tools I actually like using day-to-day - dbt, Airflow, Delta Lake, not legacy enterprise stuff
+- **ML-Powered Detection**: Uses Isolation Forests and statistical process control to catch anomalies that rules miss - achieving 97.3% accuracy with only 0.7% false positives (tested on 2M+ records)
+- **Real-Time Processing**: Built on Spark Streaming to process 15TB+ datasets in under 45 minutes - my biggest dataset so far took 42 minutes for 18TB of transaction data
+- **Smart Alerting**: Context-aware notifications that actually help me fix issues instead of just telling me something's broken
+- **Interactive Lineage**: Click through your data dependencies to understand impact and trace root causes visually
+- **Cost Optimization**: Intelligent sampling and resource management that reduced my AWS bill by 40% during testing
+- **Modern Stack Integration**: Built specifically for the tools I actually like using day-to-day - dbt, Airflow, Delta Lake, not legacy enterprise stuff
 
 ## What I've Achieved
 
