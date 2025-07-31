@@ -29,7 +29,6 @@
 
 
 https://github.com/user-attachments/assets/c1b7df73-a99b-4fcd-b4b4-99fea3ef5db3
-**[Architecture Deep Dive](docs/architecture.md)** 
 
 ---
 
