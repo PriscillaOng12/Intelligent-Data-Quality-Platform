@@ -2,10 +2,6 @@
 
 Complete documentation for the Intelligent Data Quality Platform REST API.
 
-# API Reference
-
-*A comprehensive guide to the REST API I built for data quality monitoring*
-
 ## Why I Designed the API This Way
 
 When I started building this, I tried to cram everything into a few giant endpoints. Big mistake - debugging became a nightmare and adding new features meant breaking existing ones. So I redesigned it following REST principles I learned from reading the Stripe and GitHub API docs (they're honestly works of art).
