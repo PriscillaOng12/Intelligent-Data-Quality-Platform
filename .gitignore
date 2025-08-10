@@ -28,6 +28,12 @@ data/delta/
 # Generated reports 
 backend/reports/
 
+# Large image files
+docs/images/*.png
+docs/images/*.jpg
+docs/images/*.jpeg
+docs/images/*.gif
+
 # Docker 
 Dockerfile.tmp
 *.dockerfile
